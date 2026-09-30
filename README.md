@@ -1,8 +1,15 @@
 # GPT-2 GPU Inference Engine (from scratch)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yranjan06/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/07_Sampling/07_Sampling.ipynb)
-
-*Note: The project is broken down into 7 step-by-step modular notebooks. You can explore them in the [`notebooks/`](notebooks/) directory.*
+### Run on Google Colab (Stage-by-Stage)
+| Phase | Topic | Colab Link |
+| :--- | :--- | :--- |
+| **1** | GPU Basics & Profiling | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yranjan06/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/01_GPU_Basics/01_GPU_Basics.ipynb) |
+| **2** | Manual Forward Pass | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yranjan06/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/02_Manual_Forward_Pass/02_Manual_Forward_Pass.ipynb) |
+| **3** | KV Cache Implementation | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yranjan06/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/03_KV_Cache/03_KV_Cache.ipynb) |
+| **4** | Custom Triton LayerNorm | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yranjan06/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/04_Triton_LayerNorm/04_Triton_LayerNorm.ipynb) |
+| **5** | Custom Triton Attention | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yranjan06/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/05_Triton_Attention/05_Triton_Attention.ipynb) |
+| **6** | INT8 Weight Quantization | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yranjan06/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/06_INT8_Quantization/06_INT8_Quantization.ipynb) |
+| **7** | Advanced Sampling | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yranjan06/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/07_Sampling/07_Sampling.ipynb) |
 
 A hand-written GPU inference engine for GPT-2, built to understand what production LLM serving frameworks abstract away: memory movement, kernel-launch overhead, floating-point precision, Triton kernel fusion, and quantization tradeoffs. No `model.generate()`, no `torch.nn.MultiheadAttention`, every operation from token embedding to the final logit was implemented by hand and verified against a HuggingFace reference model.
 
@@ -35,7 +42,7 @@ A hand-written GPU inference engine for GPT-2, built to understand what producti
 ## How to Run (Local or Google Colab)
 
 1. **Option A: Google Colab**
-   Click the "Open in Colab" badge at the top to run the final version of the engine (Phase 7). You can also find individual badges inside the `notebooks/` directory for each specific phase. Ensure you select a **T4 GPU** runtime (`Runtime > Change runtime type > Hardware accelerator > T4 GPU`).
+   Click any of the "Open in Colab" badges at the top of this README to open a specific phase. Ensure you select a **T4 GPU** runtime (`Runtime > Change runtime type > Hardware accelerator > T4 GPU`) when running them.
 
 2. **Option B: Local Setup**
    Clone the repository and install the dependencies:
