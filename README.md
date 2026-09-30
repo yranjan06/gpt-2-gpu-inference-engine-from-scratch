@@ -2,14 +2,14 @@
 
 ### Run on Google Colab (Stage-by-Stage)
 | Phase | Topic | Colab Link |
-| :--- | :,- | :--- |
-| **1** | GPU Basics & Profiling | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/01_GPU_Basics/01_GPU_Basics.ipynb) |
-| **2** | Manual Forward Pass | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/02_Manual_Forward_Pass/02_Manual_Forward_Pass.ipynb) |
-| **3** | KV Cache Implementation | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/03_KV_Cache/03_KV_Cache.ipynb) |
-| **4** | Custom Triton LayerNorm | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/04_Triton_LayerNorm/04_Triton_LayerNorm.ipynb) |
-| **5** | Custom Triton Attention | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/05_Triton_Attention/05_Triton_Attention.ipynb) |
-| **6** | INT8 Weight Quantization | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/06_INT8_Quantization/06_INT8_Quantization.ipynb) |
-| **7** | Advanced Sampling | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/07_Sampling/07_Sampling.ipynb) |
+| :--- | :--- | :--- |
+| **1** | GPU Basics & Profiling | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yranjan06/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/01_GPU_Basics/01_GPU_Basics.ipynb) |
+| **2** | Manual Forward Pass | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yranjan06/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/02_Manual_Forward_Pass/02_Manual_Forward_Pass.ipynb) |
+| **3** | KV Cache Implementation | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yranjan06/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/03_KV_Cache/03_KV_Cache.ipynb) |
+| **4** | Custom Triton LayerNorm | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yranjan06/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/04_Triton_LayerNorm/04_Triton_LayerNorm.ipynb) |
+| **5** | Custom Triton Attention | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yranjan06/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/05_Triton_Attention/05_Triton_Attention.ipynb) |
+| **6** | INT8 Weight Quantization | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yranjan06/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/06_INT8_Quantization/06_INT8_Quantization.ipynb) |
+| **7** | Advanced Sampling | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yranjan06/gpt-2-gpu-inference-engine-from-scratch/blob/main/notebooks/07_Sampling/07_Sampling.ipynb) |
 
 A hand-written GPU inference engine for GPT-2, built to understand what production LLM serving frameworks abstract away: memory movement, kernel-launch overhead, floating-point precision, Triton kernel fusion, and quantization tradeoffs. No `model.generate()`, no `torch.nn.MultiheadAttention`, every operation from token embedding to the final logit was implemented by hand and verified against a HuggingFace reference model.
 
@@ -18,7 +18,7 @@ A hand-written GPU inference engine for GPT-2, built to understand what producti
 ## Performance Metrics
 
 | Metric | Result |
-| --- | ,- |
+| --- | --- |
 | **TTFT** (5-token prompt) | 10.18 ms |
 | **TPOT** (decode step) | 9.63 ms |
 | **Decode throughput** | 103.8 tokens/sec |
@@ -47,7 +47,7 @@ A hand-written GPU inference engine for GPT-2, built to understand what producti
 2. **Option B: Local Setup**
    Clone the repository and install the dependencies:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/gpt-2-gpu-inference-engine-from-scratch.git
+   git clone https://github.com/yranjan06/gpt-2-gpu-inference-engine-from-scratch.git
    cd gpt-2-gpu-inference-engine-from-scratch
    pip install -r requirements.txt
    ```

@@ -11,7 +11,7 @@
 ## 📊 Key Metrics & Findings
 
 | Metric | Measurement / Result |
-| --- | ,- |
+| --- | --- |
 | **TTFT (Time To First Token)** | 10.18 ms |
 | **TPOT (Time Per Output Token)** | 9.63 ms |
 | **Decode Throughput** | 103.8 tokens/sec |

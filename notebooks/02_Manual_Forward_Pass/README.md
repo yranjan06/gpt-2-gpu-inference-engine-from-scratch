@@ -14,7 +14,7 @@
 ## 📊 Key Metrics & Findings
 
 | Metric | Measurement / Result |
-| --- | ,- |
+| --- | --- |
 | **Model Size** | 124.4 M Parameters |
 | **Total fp32 Memory Footprint** | 497.8 MB |
 | **Full-Model Correctness** | 6.1e-5 max absolute difference vs HuggingFace |

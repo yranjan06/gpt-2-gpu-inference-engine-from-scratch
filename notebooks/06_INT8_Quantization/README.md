@@ -12,7 +12,7 @@
 ## 📊 Key Metrics & Findings
 
 | Metric | Measurement / Result |
-| --- | ,- |
+| --- | --- |
 | **Memory Reduction** | Exactly 4.00x smaller weights |
 | **Weight Error (Max Relative)** | 0.39% |
 | **Output Error (Compounded)** | 6.24% relative error |

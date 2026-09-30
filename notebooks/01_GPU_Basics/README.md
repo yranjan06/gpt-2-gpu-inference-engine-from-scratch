@@ -12,7 +12,7 @@
 ## 📊 Key Metrics & Findings
 
 | Metric | Measurement / Result |
-| --- | ,- |
+| --- | --- |
 | **CPU -> GPU Transfer Bandwidth** | ~4.8 GB/s (pageable memory) |
 | **GPU VRAM Bandwidth** | ~230 - 245 GB/s (72% of T4 peak) |
 | **CPU vs GPU Matmul (n=4096)** | 17.2x speedup on GPU |

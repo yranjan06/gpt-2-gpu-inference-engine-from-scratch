@@ -11,7 +11,7 @@
 ## 📊 Key Metrics & Findings
 
 | Metric | Measurement / Result |
-| --- | ,- |
+| --- | --- |
 | **Isolated Kernel Speedup** | 2.47x faster than PyTorch Manual LayerNorm |
 | **End-to-End Pipeline Speedup** | 1.13x faster overall |
 | **Observation** | Amdahl's Law limit reached; LayerNorm is a minority of total execution time. |
